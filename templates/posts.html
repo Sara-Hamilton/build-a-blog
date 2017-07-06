@@ -9,12 +9,14 @@
 <ul style="list-style-type:none">
     {% for entry in entries %}
     <li>
-        <h2>{{entry.title}}</h2>
+        <a href="./blog?id={{entry.id}}">
+            <h2>{{entry.title}}</h2>
+        </a>
     </li>
     <li>{{entry.body}}</li>
     </hr>
     {% endfor %}
 </ul>
-</form>
+
 
 <a href="#top">top of page</a> {% endif %} {% endblock %}
