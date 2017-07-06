@@ -1,0 +1,43 @@
+{% extends "base.html" %} {% block content %}
+<h1>Build a Blog</h1>
+
+<!--
+<form method="POST">
+    <label>
+            New Entry:
+            <input type="text" name="entry" />
+        </label>
+    <input type="submit" value="Add Entry">
+
+</form>
+-->
+
+<hr /> {% if entries|length == 0 %}
+<p>No entries yet.</p>
+{% else %}
+
+<ul style="list-style-type:none">
+    {% for entry in entries %}
+    <li>
+        <h2>{{entry.title}}</h2>
+    </li>
+    <li>{{entry.body}}</li>
+    </hr>
+    {% endfor %}
+</ul>
+</form>
+
+{% endif %}
+
+<!--
+<hr/>
+
+<h2>Completed</h2>
+<ul>
+    {% for task in completed_tasks %}
+    <li>{{task.name}}</li>
+    {% endfor %}
+</ul>
+-->
+
+{% endblock %}
