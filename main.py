@@ -40,21 +40,16 @@ def index():
 
 @app.route('/add-entry', methods=["POST", "GET"])
 def add_entry():
-    
-    if request.method == "POST":
-        title_name = request.form['title']
-        body_name = request.form['body']
-        new_entry = Blog(title_name, body_name)
-        db.session.add(new_entry)
-        db.session.commit()
 
     entries = Blog.query.all()
-    
+  
     return render_template('add-entry.html', page_title="blog", entries=entries)
 
 
 @app.route('/validate', methods=["POST", "GET"])
 def validate():
+
+    entries = Blog.query.all()
 
     title, title_error = validate_title(request.form["title"])
     body, body_error = validate_body(request.form["body"])
@@ -66,7 +61,7 @@ def validate():
             new_entry = Blog(title_name, body_name)
             db.session.add(new_entry)
             db.session.commit()
-
+         
         return render_template('confirmation.html', page_title = "confirmation")
     else:
         return render_template('add-entry.html', page_title = "blog", title = title, title_error = title_error, body = body, body_error = body_error)

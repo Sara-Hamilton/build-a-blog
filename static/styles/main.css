@@ -1,3 +1,20 @@
 body {
-    background-color: lightblue;
+    background-color: #FDF5E6;
+}
+
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+body {
+    font-family: Verdana;
+}
+
+nav a {
+    padding-right: 2em;
+}
+
+li:nth-child(even) {
+    border-bottom: groove gray;
 }
