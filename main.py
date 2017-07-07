@@ -38,34 +38,17 @@ def index():
     
     if "id" in request.args:
         id = request.args.get('id')
+        entry = Blog.query.get(id)
         
-        #entry = Blog.query.filter_by(id=id).all()
-        #body = Blog.query.filter_by(body={body}).get()
-        #title = request.form['title']
-        #body = request.form['body']
-        
-        return render_template('entries.html', page_title="blog-post", title = "title", body = "body")
+        return render_template('entries.html', page_title="blog-post", title = entry.title, body = entry.body)
     
     return render_template('posts.html', page_title="blog", entries = entries)
 
-'''
-@app.route('/entries', methods=["POST", "GET"])
-def entries():
-    # entries = Blog.query.all()
-    #title = Blog.query.filter_by(title={title}).get()
-    #body = Blog.query.filter_by(body={body}).get()
-    id = request.args.get('id')
-    title_name = request.form['title']
-    body_name = request.form['body']
-    return render_template('entries.html', page_title="blog-post", title_name=title_name, body_name=body_name)
-'''
 
-@app.route('/add-entry', methods=["POST", "GET"])
+@app.route('/newpost', methods=["POST", "GET"])
 def add_entry():
-
-    entries = Blog.query.all()
   
-    return render_template('add-entry.html', page_title="blog", entries=entries)
+    return render_template('newpost.html', page_title="blog")
 
 
 @app.route('/validate', methods=["POST", "GET"])
@@ -81,10 +64,9 @@ def validate():
             db.session.add(new_entry)
             db.session.commit()
         
-        #return redirect('/blog')
         return render_template('entries.html', page_title = "confirmation", title = title, body = body)
     else:
-        return render_template('add-entry.html', page_title = "blog", title = title, title_error = title_error, body = body, body_error = body_error)
+        return render_template('newpost.html', page_title = "blog", title = title, title_error = title_error, body = body, body_error = body_error)
 
 
 if __name__ == '__main__':
