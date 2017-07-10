@@ -1,71 +1,127 @@
-  .error {
-      color: red;
-      font-weight: bold;
-  }
-  
-  body {
-      font-family: Verdana;
-      background-color: #94bab3;
-      margin: 0 25em 0 25em;
-  }
-  
-  nav a {
-      padding-right: 2em;
-      text-align: center;
-  }
-  
-  li:nth-child(even) {
-      border-bottom: groove;
-  }
-  
-  nav,
-  h1 {
-      text-align: center;
-      margin: auto;
-      padding: 1em;
-  }
-  
-  .btn,
-  .bottom {
-      width: 100px;
-      padding: 0.5em;
-      margin: 2em;
-      background: gray;
-      color: black;
-      border-radius: 30px;
-  }
-  
-  .btn:hover,
-  .bottom:hover {
-      /* box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);*/
-  }
-  
-  a.bottom {
-      position: fixed;
-      bottom: 1em;
-      right: 7em;
-      width: 6em;
-  }
-  /* unvisited link */
-  
-  a:link {
-      color: #283d3b;
-      text-decoration: none;
-  }
-  /* visited link */
-  
-  a:visited {
-      color: #636856;
-      /* text-shadow: 2px 2px 4px #000000; */
-  }
-  
-  a:visited.btn,
-  a:visited.bottom {
-      color: white;
-  }
-  
-  h1,
-  h2:hover {
-      color: white;
-      /* text-shadow: 2px 2px 4px #000000;*/
-  }
+.error {
+    color: red;
+    font-weight: bold;
+}
+
+body {
+    font-family: Verdana;
+    margin: 0 25em 0 25em;
+    color: #423e37;
+}
+
+nav a {
+    padding-right: 2em;
+    text-align: center;
+}
+
+li:nth-child(even) {
+    border-bottom: groove;
+}
+
+nav,
+h1 {
+    text-align: center;
+    margin: auto;
+    padding: 1em;
+}
+
+.btn,
+.bottom {
+    width: 100px;
+    padding: 0.5em;
+    margin: 2em;
+    border-radius: 30px;
+}
+
+.btn:hover,
+.bottom:hover {
+    /* box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);*/
+}
+
+a.bottom {
+    position: fixed;
+    bottom: 1em;
+    right: 7em;
+    width: 6em;
+}
+
+
+/* unvisited link */
+
+a:link {
+    text-decoration: none;
+}
+
+
+/* visited link */
+
+a:visited {
+    /* text-shadow: 2px 2px 4px #000000; */
+}
+
+body {
+    background-color: #94bab3;
+}
+
+.btn,
+.bottom {
+    background: gray;
+    color: white;
+}
+
+a:link {
+    color: #283d3b;
+}
+
+a:visited {
+    color: #636856;
+}
+
+a:visited.btn,
+a:visited.bottom {
+    color: white;
+}
+
+h2:hover {
+    color: white;
+}
+
+h1,
+h2:hover {
+    color: white;
+}
+
+
+/*** color scheme 2
+body {
+    background-color: #423e37;
+}
+
+.btn,
+.bottom {
+    background: gray;
+    color: black;
+}
+
+a:link {
+    color: #d6ae6b;
+}
+
+a:visited {
+    color: #9a9e91;
+}
+
+a:visited.btn,
+a:visited.bottom {
+    color: #d6d6ba;
+}
+
+h2:hover {
+    color: #d6d6ba;
+}
+
+h1,
+h2:hover {
+    color: #d6d6ba;
+}
+***/
