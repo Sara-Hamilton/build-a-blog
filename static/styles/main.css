@@ -1,6 +1,17 @@
 .error {
     color: red;
     font-weight: bold;
+    background-color: white;
+    margin: 0 9em 0 9em;
+}
+
+label {
+    margin: 0 9em 0 9em;
+}
+
+.label2 {
+    margin: -10px;
+    padding: 0 0 0 10px;
 }
 
 body {
@@ -26,16 +37,13 @@ h1 {
 }
 
 .btn,
+.button,
 .bottom {
     width: 100px;
     padding: 0.5em;
     margin: 2em;
     border-radius: 30px;
-}
-
-.btn:hover,
-.bottom:hover {
-    /* box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);*/
+    font-size: 14px;
 }
 
 a.bottom {
@@ -52,15 +60,23 @@ a:link {
     text-decoration: none;
 }
 
-
-/* visited link */
-
-a:visited {
-    /* text-shadow: 2px 2px 4px #000000; */
-}
-
 body {
     background-color: #94bab3;
+}
+
+input.button {
+    display: block;
+    margin: 0 auto;
+    float: none;
+    background: gray;
+    color: white;
+}
+
+textarea,
+input {
+    display: block;
+    margin: 0 auto;
+    float: none;
 }
 
 .btn,
@@ -79,10 +95,6 @@ a:visited {
 
 a:visited.btn,
 a:visited.bottom {
-    color: white;
-}
-
-h2:hover {
     color: white;
 }
 
