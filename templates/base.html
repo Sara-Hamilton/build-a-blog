@@ -1,13 +1,16 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{page_title}}</title>
-    <a name="top"></a>
     <link rel="stylesheet" type="text/css" href="/static/styles/main.css" />
 </head>
 
 <header>
+    <a name="top"></a>
     <nav>
         <a href="/blog" class="btn">Main Blog Page</a>
         <a href="/newpost" class="btn">Add a Blog Entry</a>
@@ -17,5 +20,3 @@
 <body>
     {% block content %} {% endblock %}
 </body>
-
-</html>

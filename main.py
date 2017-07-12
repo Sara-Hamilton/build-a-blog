@@ -13,7 +13,7 @@ class Blog(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     title = db.Column(db.String(100))
-    body = db.Column(db.String(999))
+    body = db.Column(db.String(5000))
 
     def __init__(self, title, body):
         self.title = title
@@ -30,6 +30,8 @@ def validate_body(body):
     body, body_error = body, ""
     if body == "":
         body_error = "Blog entry must have content."
+    elif len(body) > 5000:
+        body_error = "Blog entry cannot be more than 5000 characters long."
     return body, body_error
 
 @app.route('/blog', methods=["POST", "GET"])

@@ -1,8 +1,9 @@
 .error {
-    color: red;
+    background-color: firebrick;
     font-weight: bold;
-    background-color: white;
-    margin: 0 9em 0 9em;
+    color: #d6d6ba;
+    margin: 0em 40em 1em 9em;
+    text-align: center
 }
 
 label {
@@ -17,7 +18,7 @@ label {
 body {
     font-family: Verdana;
     margin: 0 25em 0 25em;
-    color: #423e37;
+    color: #d6d6ba;
 }
 
 nav a {
@@ -26,14 +27,20 @@ nav a {
 }
 
 li:nth-child(even) {
-    border-bottom: groove;
+    border-bottom: groove gray;
+    color: #d6d6ba;
 }
 
-nav,
+nav {
+    text-align: center;
+    margin: auto;
+    padding: 2em 2em 0em 2em;
+}
+
 h1 {
     text-align: center;
     margin: auto;
-    padding: 1em;
+    padding: 2em 2em 1em 2em;
 }
 
 .btn,
@@ -53,23 +60,13 @@ a.bottom {
     width: 6em;
 }
 
-
-/* unvisited link */
-
-a:link {
-    text-decoration: none;
-}
-
-body {
-    background-color: #94bab3;
-}
-
 input.button {
     display: block;
     margin: 0 auto;
     float: none;
     background: gray;
-    color: white;
+    color: #d6d6ba;
+    border-style: none;
 }
 
 textarea,
@@ -77,34 +74,9 @@ input {
     display: block;
     margin: 0 auto;
     float: none;
+    background-color: #d6d6ba;
 }
 
-.btn,
-.bottom {
-    background: gray;
-    color: white;
-}
-
-a:link {
-    color: #283d3b;
-}
-
-a:visited {
-    color: #636856;
-}
-
-a:visited.btn,
-a:visited.bottom {
-    color: white;
-}
-
-h1,
-h2:hover {
-    color: white;
-}
-
-
-/*** color scheme 2
 body {
     background-color: #423e37;
 }
@@ -112,28 +84,21 @@ body {
 .btn,
 .bottom {
     background: gray;
-    color: black;
+    color: #d6d6ba;
 }
 
+h1,
 a:link {
     color: #d6ae6b;
+    text-decoration: none;
 }
 
 a:visited {
     color: #9a9e91;
 }
 
+h2:hover,
 a:visited.btn,
 a:visited.bottom {
     color: #d6d6ba;
 }
-
-h2:hover {
-    color: #d6d6ba;
-}
-
-h1,
-h2:hover {
-    color: #d6d6ba;
-}
-***/
