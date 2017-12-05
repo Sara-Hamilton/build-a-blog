@@ -6,17 +6,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>{{page_title}}</title>
+    <!-- <link rel="stylesheet" type="text/css" href="/static/styles/main.css" /> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <link rel="stylesheet" type="text/css" href="/static/styles/main.css" />
 </head>
+<div class="container">
+    <header>
+        <a name="top"></a>
+        <nav>
+            <a href="/blog" class="btn">Main Blog Page</a>
+            <a href="/newpost" class="btn">Add a Blog Entry</a>
+        </nav>
+    </header>
 
-<header>
-    <a name="top"></a>
-    <nav>
-        <a href="/blog" class="btn">Main Blog Page</a>
-        <a href="/newpost" class="btn">Add a Blog Entry</a>
-    </nav>
-</header>
-
-<body>
-    {% block content %} {% endblock %}
-</body>
+    <body>
+        {% block content %} {% endblock %}
+    </body>
+</div>

@@ -2,23 +2,19 @@
     background-color: firebrick;
     font-weight: bold;
     color: #d6d6ba;
-    margin: 0em 40em 1em 9em;
     text-align: center
 }
 
-label {
-    margin: 0 9em 0 9em;
-}
-
-.label2 {
-    margin: -10px;
-    padding: 0 0 0 10px;
-}
-
 body {
-    font-family: Verdana;
-    margin: 0 25em 0 25em;
+    font-family: "Arial Black", Gadget, sans-serif;
+    /*margin: 0 25em 0 25em;*/
     color: #d6d6ba;
+}
+
+.entry {
+    color: #696969;
+    margin: auto;
+    width: 100%;
 }
 
 nav a {
@@ -40,24 +36,26 @@ nav {
 h1 {
     text-align: center;
     margin: auto;
+    width: 100%;
     padding: 2em 2em 1em 2em;
 }
 
 .btn,
 .button,
 .bottom {
-    width: 100px;
+    /*width: 100px;*/
     padding: 0.5em;
     margin: 2em;
-    border-radius: 30px;
-    font-size: 14px;
+    border-radius: 2em;
+    font-size: 1em;
 }
 
 a.bottom {
     position: fixed;
     bottom: 1em;
     right: 7em;
-    width: 6em;
+    width: 12em;
+    text-align: center;
 }
 
 input.button {
@@ -67,6 +65,8 @@ input.button {
     background: gray;
     color: #d6d6ba;
     border-style: none;
+    width: 12em;
+    font-size: 1em;
 }
 
 textarea,
@@ -83,8 +83,10 @@ body {
 
 .btn,
 .bottom {
+    width: 12em;
     background: gray;
     color: #d6d6ba;
+    text-align: centered;
 }
 
 h1,
